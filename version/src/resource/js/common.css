@@ -1,0 +1,31 @@
+a, body, img { -webkit-touch-callout: none }
+body, label, summary { cursor: default }
+a, a:active, a:hover, a:link, a:visited, del, ins, s, u { text-decoration: none }
+a, a:hover, button { cursor: pointer }
+abbr, body, button, fieldset, html, iframe, img { border: 0 }
+a, blockquote, body, button, caption, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hr, html, img, input, legend, li, menu, ol, p, pre, table, td, textarea, th, ul { padding: 0; margin: 0 }
+* { font-family: "Microsoft YaHei UI", tahoma, arial, 'Hiragino Sans GB', sans-serif }
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; font-style: normal }
+address, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+button, input[type=submit], input[type=reset], input[type=button] { -webkit-appearance: none; vertical-align: middle; cursor: pointer }
+button, input, select, textarea { text-decoration: none; -moz-outline: none; font: inherit; word-break: normal; text-transform: none }
+[hidefocus], a, a:active, a:focus, a:hover, body, button, input, keygen, legend, select, summary, textarea { outline: 0 }
+input, label, select { vertical-align: middle }
+input[type=checkbox], input[type=radio] { box-sizing: border-box; padding: 0 }
+input[type=search] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box }
+body { word-wrap: break-word; -ms-content-zooming: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust: none }
+caption, th { text-align: left }
+address, caption, cite, code, dfn, em, th, var { font-style: normal; font-weight: 400 }
+dl, li, ol, ul { list-style: none }
+code, kbd, pre, samp { font-family: inherit }
+textarea { resize: none; overflow: auto; vertical-align: top }
+a, a:hover { -webkit-tap-highlight-color: transparent }
+a:active {  blr: expression(this.onFocus=this.blur())
+}
+a:focus { -moz-outline: none }
+em, i { font-style: normal }
+svg:not(:root) { overflow: hidden }
+blockquote, q { quotes: none }
+blockquote:after, blockquote:before, q:after, q:before { content: ""; content: none }
+table { border-collapse: collapse; border-spacing: 0 }
+* { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); box-sizing: border-box; -webkit-font-smoothing: antialiased }
