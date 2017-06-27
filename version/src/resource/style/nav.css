@@ -45,7 +45,7 @@ ol li.red { background: #FFFF00; }
     #navBox li .nav-off { color: rgb(255,255,255); }
     #mainNav .hc-logobox img { height: 50px; padding: 10px; }
     /*C菜单按钮*/
-    #mainNav .hc-oi { width: 24px; height: 24px; border-radius: 4px; background: #fccb0d; position: absolute; right: 20px; top: 13px; padding: 3px; box-shadow: 0 -1px 5px #705900 inset; }
+    #mainNav .hc-oi { width: 24px; height: 24px; border-radius: 4px; background: rgba(243, 255, 109, 0.9); position: absolute; right: 20px; top: 13px; padding: 3px; box-shadow: 0 -1px 5px #705900 inset; }
     #mainNav .hc-io { width: 24px; height: 24px; border-radius: 4px; background: #fccb0d; position: absolute; right: 20px; top: 13px; padding: 3px; box-shadow: 0 1px 5px #705900 inset; }
     #mainNav .hc-oi em { position: absolute; left: 50%; top: 50%; bottom: auto; right: auto; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); display: inline-block; width: 16px; height: 2px; background-color: #353535; z-index: 10; }
     #mainNav .hc-oi em::before,  #mainNav .hc-oi em:after,  #mainNav .hc-oi em::before,  #mainNav .hc-oi em:after { content: ''; position: absolute; top: 0; right: 0; width: 100%; height: 100%; background-color: #353535; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: -webkit-transform .3s; -moz-transition: -moz-transform .3s; transition: transform .3s; }
