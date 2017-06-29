@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0bfdc25-1f05-4a9b-aec8-0b929d8ae914" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/version/src/resource/images/preloader.gif" afterPath="$PROJECT_DIR$/version/src/resource/images/preloader.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/version/src/Home.html" afterPath="$PROJECT_DIR$/version/src/Home.html" />
     </list>
@@ -32,10 +31,11 @@
       <file leaf-file-name="Home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/version/src/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="171" column="81" lean-forward="false" selection-start-line="171" selection-start-column="81" selection-end-line="171" selection-end-column="81" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -44,8 +44,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/version/src/resource/style/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="193">
+              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -125,7 +125,6 @@
         <option value="$PROJECT_DIR$/version/src/resource/style/preload.css" />
         <option value="$PROJECT_DIR$/version/src/resource/js/js/custom.js" />
         <option value="$PROJECT_DIR$/version/src/resource/js/flicker &amp; preload.js" />
-        <option value="$PROJECT_DIR$/version/src/resource/style/main.css" />
         <option value="$PROJECT_DIR$/version/src/resource/style/jq22-demo.css" />
         <option value="$PROJECT_DIR$/version/src/resource/js/flicker-preload.js" />
         <option value="$PROJECT_DIR$/version/src/resource/style/common.css" />
@@ -143,6 +142,7 @@
         <option value="$PROJECT_DIR$/version/src/aaa.html" />
         <option value="$USER_HOME$/Downloads/fullPage.js-master/examples/responsiveWidth.html" />
         <option value="$USER_HOME$/Downloads/77/index13.html" />
+        <option value="$PROJECT_DIR$/version/src/resource/style/main.css" />
         <option value="$PROJECT_DIR$/version/src/Home.html" />
       </list>
     </option>
@@ -154,10 +154,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
-    <option name="y" value="69" />
-    <option name="width" value="1491" />
-    <option name="height" value="959" />
+    <option name="x" value="-25" />
+    <option name="y" value="25" />
+    <option name="width" value="1933" />
+    <option name="height" value="1005" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -366,7 +366,7 @@
       <workItem from="1498713796063" duration="2666000" />
       <workItem from="1498744777479" duration="124000" />
       <workItem from="1498745479506" duration="1764000" />
-      <workItem from="1498747713120" duration="84000" />
+      <workItem from="1498747713120" duration="1003000" />
     </task>
     <task id="LOCAL-00001" summary="what?">
       <created>1498745539836</created>
@@ -396,14 +396,21 @@
       <option name="project" value="LOCAL" />
       <updated>1498746817101</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="what?">
+      <created>1498747820414</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1498747820414</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194654000" />
+    <option name="totallyTimeSpent" value="195573000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="69" width="1491" height="959" extended-state="0" />
+    <frame x="-25" y="25" width="1933" height="1005" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20136054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -599,14 +606,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/version/src/resource/style/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/77/index13.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -615,12 +614,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/version/src/resource/style/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/version/src/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="270">
+          <caret line="171" column="81" lean-forward="false" selection-start-line="171" selection-start-column="81" selection-end-line="171" selection-end-column="81" />
           <folding>
             <element signature="n#style#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
