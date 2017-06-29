@@ -40,9 +40,6 @@
 </head>
 <body>
 <!--============================= 预加载 =============================-->
-<div class="preloader">
-    <div class="status"></div>
-</div>
 
 <!--============================= 红丝带下拉内容 / 红丝带 =============================-->
 <div class="forkit-curtain" style="z-index: 999999 ">
@@ -234,7 +231,7 @@
 
             function autoScrolling(){
                 var $ww = $(window).width();
-                if($ww < 1024){
+                if($ww < 768){
                     $.fn.fullpage.setAutoScrolling(false);
                 } else {
                     $.fn.fullpage.setAutoScrolling(true);
