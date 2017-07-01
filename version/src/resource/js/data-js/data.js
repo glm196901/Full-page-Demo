@@ -322,7 +322,7 @@ option3 = {
         y : 'center',
         data:[
             '机器学习','数据挖掘','人工智能','自然语言处理+','Web技术',
-            '服务端技术', '产品', '设计', '开发', '人才优势'
+            '云服务端技术', '产品', '设计', '开发', '人才优势'
         ]
     },
     title : {
@@ -425,7 +425,7 @@ option3 = {
             itemStyle : labelFromatter,
             data : [
                 {name:'other', value:22, itemStyle : labelBottom},
-                {name:'服务端技术', value:78,itemStyle : labelTop}
+                {name:'云服务端技术', value:78,itemStyle : labelTop}
             ]
         },
         {
@@ -603,8 +603,6 @@ const geoCoordMap = {
 };
 $(function(){
     const migration =  echarts.init(document.getElementById('migration'));
-
-
     const BJData = [
         [{name:'北京'}, {name:'大连',value:80}],
         [{name:'北京'}, {name:'南宁',value:70}],
