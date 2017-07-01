@@ -321,13 +321,13 @@ option3 = {
         x : 'center',
         y : 'center',
         data:[
-            'GoogleMaps','Facebook','Youtube','Google+','Weixin',
-            'Twitter', 'Skype', 'Messenger', 'Whatsapp', 'Instagram'
+            '机器学习','数据挖掘','人工智能','自然语言处理+','Web技术',
+            '服务端技术', '产品', '设计', '开发', '人才优势'
         ]
     },
     title : {
-        text: 'The App World',
-        subtext: 'from global web index',
+        text: '优势饼图一览',
+        subtext: '我们的实力',
         x: 'center'
     },
     toolbox: {
@@ -369,7 +369,7 @@ option3 = {
             itemStyle : labelFromatter,
             data : [
                 {name:'other', value:46, itemStyle : labelBottom},
-                {name:'GoogleMaps', value:54,itemStyle : labelTop}
+                {name:'机器学习', value:54,itemStyle : labelTop}
             ]
         },
         {
@@ -379,8 +379,8 @@ option3 = {
             x:'20%', // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:56, itemStyle : labelBottom},
-                {name:'Facebook', value:44,itemStyle : labelTop}
+                {name:'other', value:44, itemStyle : labelBottom},
+                {name:'数据挖掘', value:56,itemStyle : labelTop}
             ]
         },
         {
@@ -390,8 +390,8 @@ option3 = {
             x:'40%', // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:65, itemStyle : labelBottom},
-                {name:'Youtube', value:35,itemStyle : labelTop}
+                {name:'other', value:35, itemStyle : labelBottom},
+                {name:'人工智能', value:65,itemStyle : labelTop}
             ]
         },
         {
@@ -401,8 +401,8 @@ option3 = {
             x:'60%', // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:70, itemStyle : labelBottom},
-                {name:'Google+', value:30,itemStyle : labelTop}
+                {name:'other', value:30, itemStyle : labelBottom},
+                {name:'自然语言处理', value:70,itemStyle : labelTop}
             ]
         },
         {
@@ -412,8 +412,8 @@ option3 = {
             x:'80%', // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:73, itemStyle : labelBottom},
-                {name:'Weixin', value:27,itemStyle : labelTop}
+                {name:'other', value:27, itemStyle : labelBottom},
+                {name:'Web技术', value:73,itemStyle : labelTop}
             ]
         },
         {
@@ -424,8 +424,8 @@ option3 = {
             x: '0%',    // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:78, itemStyle : labelBottom},
-                {name:'Twitter', value:22,itemStyle : labelTop}
+                {name:'other', value:22, itemStyle : labelBottom},
+                {name:'服务端技术', value:78,itemStyle : labelTop}
             ]
         },
         {
@@ -436,8 +436,8 @@ option3 = {
             x:'20%',    // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:78, itemStyle : labelBottom},
-                {name:'Skype', value:22,itemStyle : labelTop}
+                {name:'other', value:22, itemStyle : labelBottom},
+                {name:'产品', value:78,itemStyle : labelTop}
             ]
         },
         {
@@ -448,8 +448,8 @@ option3 = {
             x:'40%', // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:78, itemStyle : labelBottom},
-                {name:'Messenger', value:22,itemStyle : labelTop}
+                {name:'other', value:22, itemStyle : labelBottom},
+                {name:'设计', value:78,itemStyle : labelTop}
             ]
         },
         {
@@ -460,8 +460,8 @@ option3 = {
             x:'60%', // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:83, itemStyle : labelBottom},
-                {name:'Whatsapp', value:17,itemStyle : labelTop}
+                {name:'other', value:17, itemStyle : labelBottom},
+                {name:'开发', value:83,itemStyle : labelTop}
             ]
         },
         {
@@ -472,8 +472,8 @@ option3 = {
             x:'80%', // for funnel
             itemStyle : labelFromatter,
             data : [
-                {name:'other', value:89, itemStyle : labelBottom},
-                {name:'Instagram', value:11,itemStyle : labelTop}
+                {name:'other', value:11, itemStyle : labelBottom},
+                {name:'人才优势', value:89,itemStyle : labelTop}
             ]
         }
     ]
@@ -482,7 +482,7 @@ pies.setOption(option3);
 
 
 /*
- ================================ pie ==================================
+ ================================ map ==================================
  */
 
 const geoCoordMap = {
@@ -602,10 +602,10 @@ const geoCoordMap = {
     '韶关': [113.7964,24.7028]
 };
 $(function(){
-    const migration =  echarts.init(document.getElementById('migration'));
+    var migration =  echarts.init(document.getElementById('migration'));
 
 
-    const BJData = [
+    var BJData = [
         [{name:'北京'}, {name:'大连',value:80}],
         [{name:'北京'}, {name:'南宁',value:70}],
         [{name:'北京'}, {name:'南昌',value:60}],
@@ -807,7 +807,7 @@ $(function(){
             });
     });
 
-const  option4 = {
+ const  option4 = {
         backgroundColor: '#404a59',
         title : {
             text: '模拟迁徙',
