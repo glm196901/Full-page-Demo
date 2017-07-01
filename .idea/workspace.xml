@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0bfdc25-1f05-4a9b-aec8-0b929d8ae914" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/version/src/resource/js/data-js/data.js" afterPath="$PROJECT_DIR$/version/src/resource/js/data-js/data.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +21,7 @@
       <file leaf-file-name="Home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/version/src/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
+            <state relative-caret-position="455">
               <caret line="111" column="10" lean-forward="true" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -60,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/version/src/resource/js/data-js/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="746" column="71" lean-forward="false" selection-start-line="746" selection-start-column="71" selection-end-line="746" selection-end-column="71" />
+            <state relative-caret-position="89">
+              <caret line="850" column="17" lean-forward="true" selection-start-line="850" selection-start-column="17" selection-end-line="850" selection-end-column="17" />
               <folding>
                 <element signature="e#2427#7297#0" expanded="false" />
               </folding>
@@ -72,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/version/src/data.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
@@ -541,7 +542,7 @@
       <workItem from="1498834476761" duration="4612000" />
       <workItem from="1498840100716" duration="395000" />
       <workItem from="1498840538995" duration="3970000" />
-      <workItem from="1498888913679" duration="14939000" />
+      <workItem from="1498888913679" duration="15293000" />
     </task>
     <task id="LOCAL-00001" summary="what?">
       <created>1498745539836</created>
@@ -711,11 +712,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498921049835</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="perfect map">
+      <created>1498921059824</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1498921059824</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225325000" />
+    <option name="totallyTimeSpent" value="225679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="186" y="40" width="1634" height="942" extended-state="0" />
@@ -1021,9 +1029,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/version/src/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/version/src/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
+        <state relative-caret-position="455">
           <caret line="111" column="10" lean-forward="true" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1060,19 +1076,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/version/src/resource/js/data-js/data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="746" column="71" lean-forward="false" selection-start-line="746" selection-start-column="71" selection-end-line="746" selection-end-column="71" />
+        <state relative-caret-position="89">
+          <caret line="850" column="17" lean-forward="true" selection-start-line="850" selection-start-column="17" selection-end-line="850" selection-end-column="17" />
           <folding>
             <element signature="e#2427#7297#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/version/src/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
