@@ -614,79 +614,8 @@ $(function(){
         [{name:'北京'}, {name:'包头',value:30}],
         [{name:'北京'}, {name:'重庆',value:20}],
         [{name:'北京'}, {name:'常州',value:10}],
-        [{name:'广州'},{name:'福州',value:95}],
-        [{name:'广州'},{name:'太原',value:90}],
-        [{name:'广州'},{name:'长春',value:80}],
-        [{name:'广州'},{name:'重庆',value:70}],
-        [{name:'广州'},{name:'西安',value:60}],
-        [{name:'广州'},{name:'成都',value:50}],
-        [{name:'广州'},{name:'常州',value:40}],
-        [{name:'广州'},{name:'北京',value:30}],
-        [{name:'广州'},{name:'北海',value:20}],
-        [{name:'广州'},{name:'海口',value:10}],
-        [{name:'上海'},{name:'包头',value:95}],
-        [{name:'上海'},{name:'昆明',value:90}],
-        [{name:'上海'},{name:'广州',value:80}],
-        [{name:'上海'},{name:'郑州',value:70}],
-        [{name:'上海'},{name:'长春',value:60}],
-        [{name:'上海'},{name:'重庆',value:50}],
-        [{name:'上海'},{name:'长沙',value:40}],
-        [{name:'上海'},{name:'北京',value:30}],
-        [{name:'上海'},{name:'丹东',value:20}],
-        [{name:'上海'},{name:'大连',value:10}]
     ];
-    /*var BJData = [
-     [{name:'成都'},{name:'潍坊',value:5}],
-     [{name:'潍坊'},{name:'西宁',value:5}],
-     [{name:'西宁'},{name:'温州',value:5}],
-     [{name:'温州'},{name:'东莞',value:5}],
-     [{name:'东莞'},{name:'汕头',value:5}],
-     [{name:'汕头'},{name:'福州',value:5}],
-     [{name:'福州'},{name:'连云港',value:5}],
-     [{name:'连云港'},{name:'长春',value:5}],
-     [{name:'长春'},{name:'南昌',value:5}],
-     [{name:'南昌'},{name:'咸阳',value:5}],
-     [{name:'咸阳'},{name:'廊坊',value:5}],
-     [{name:'廊坊'},{name:'沈阳',value:5}],
-     [{name:'沈阳'},{name:'西安',value:5}],
-     [{name:'西安'},{name:'南京',value:5}],
-     [{name:'南京'},{name:'连云港',value:5}],
-     [{name:'连云港'},{name:'深圳',value:5}],
-     [{name:'深圳'},{name:'泰安',value:5}],
-     [{name:'泰安'},{name:'武汉',value:5}],
-     [{name:'武汉'},{name:'昆明',value:5}],
-     [{name:'昆明'},{name:'南京',value:5}],
-     [{name:'南京'},{name:'武汉',value:5}],
-     [{name:'武汉'},{name:'烟台',value:5}],
-     [{name:'烟台'},{name:'长春',value:5}],
-     [{name:'长春'},{name:'贵阳',value:5}],
-     [{name:'贵阳'},{name:'宿迁',value:5}],
-     [{name:'宿迁'},{name:'徐州',value:5}],
-     [{name:'徐州'},{name:'丽水',value:5}],
-     [{name:'丽水'},{name:'长沙',value:5}],
-     [{name:'长沙'},{name:'沧州',value:5}],
-     [{name:'沧州'},{name:'盐城',value:5}],
-     [{name:'盐城'},{name:'宁波',value:5}],
-     [{name:'宁波'},{name:'宁波',value:5}],
-     [{name:'宁波'},{name:'泰安',value:5}],
-     [{name:'泰安'},{name:'厦门',value:5}],
-     [{name:'厦门'},{name:'保定',value:5}],
-     [{name:'保定'},{name:'宿迁',value:5}],
-     [{name:'宿迁'},{name:'深圳',value:5}],
-     [{name:'深圳'},{name:'贵阳',value:5}],
-     [{name:'贵阳'},{name:'金华',value:5}],
-     [{name:'金华'},{name:'肇庆',value:5}],
-     [{name:'肇庆'},{name:'金华',value:5}],
-     [{name:'金华'},{name:'苏州',value:5}],
-     [{name:'苏州'},{name:'东莞',value:5}],
-     [{name:'东莞'},{name:'惠州',value:5}],
-     [{name:'惠州'},{name:'邯郸',value:5}],
-     [{name:'邯郸'},{name:'玉溪',value:5}],
-     [{name:'玉溪'},{name:'中山',value:5}],
-     [{name:'中山'},{name:'乌鲁木齐',value:5}],
-     [{name:'乌鲁木齐'},{name:'廊坊',value:5}],
-     [{name:'廊坊'},{name:'廊坊',value:5}]
-     ];*/
+
     var SHData = [
         [{name:'上海'},{name:'包头',value:95}],
         [{name:'上海'},{name:'昆明',value:90}],
@@ -712,6 +641,90 @@ $(function(){
         [{name:'广州'},{name:'北海',value:20}],
         [{name:'广州'},{name:'海口',value:10}]
     ];
+    const ZHData = [
+        [{name:'北京'}, {name:'大连',value:80}],
+        [{name:'北京'}, {name:'南宁',value:70}],
+        [{name:'北京'}, {name:'南昌',value:60}],
+        [{name:'北京'}, {name:'拉萨',value:50}],
+        [{name:'北京'}, {name:'长春',value:40}],
+        [{name:'北京'}, {name:'包头',value:30}],
+        [{name:'北京'}, {name:'重庆',value:20}],
+        [{name:'北京'}, {name:'常州',value:10}],
+        [{name:'广州'},{name:'福州',value:95}],
+        [{name:'广州'},{name:'太原',value:90}],
+        [{name:'广州'},{name:'长春',value:80}],
+        [{name:'广州'},{name:'重庆',value:70}],
+        [{name:'广州'},{name:'西安',value:60}],
+        [{name:'广州'},{name:'成都',value:50}],
+        [{name:'广州'},{name:'常州',value:40}],
+        [{name:'广州'},{name:'北京',value:30}],
+        [{name:'广州'},{name:'北海',value:20}],
+        [{name:'广州'},{name:'海口',value:10}],
+        [{name:'上海'},{name:'包头',value:95}],
+        [{name:'上海'},{name:'昆明',value:90}],
+        [{name:'上海'},{name:'广州',value:80}],
+        [{name:'上海'},{name:'郑州',value:70}],
+        [{name:'上海'},{name:'长春',value:60}],
+        [{name:'上海'},{name:'重庆',value:50}],
+        [{name:'上海'},{name:'长沙',value:40}],
+        [{name:'上海'},{name:'北京',value:30}],
+        [{name:'上海'},{name:'丹东',value:20}],
+        [{name:'上海'},{name:'大连',value:10}]
+    ];
+    const QGData = [
+        [{name:'成都'},{name:'潍坊',value:5}],
+        [{name:'潍坊'},{name:'西宁',value:5}],
+        [{name:'西宁'},{name:'温州',value:5}],
+        [{name:'温州'},{name:'东莞',value:5}],
+        [{name:'东莞'},{name:'汕头',value:5}],
+        [{name:'汕头'},{name:'福州',value:5}],
+        [{name:'福州'},{name:'连云港',value:5}],
+        [{name:'连云港'},{name:'长春',value:5}],
+        [{name:'长春'},{name:'南昌',value:5}],
+        [{name:'南昌'},{name:'咸阳',value:5}],
+        [{name:'咸阳'},{name:'廊坊',value:5}],
+        [{name:'廊坊'},{name:'沈阳',value:5}],
+        [{name:'沈阳'},{name:'西安',value:5}],
+        [{name:'西安'},{name:'南京',value:5}],
+        [{name:'南京'},{name:'连云港',value:5}],
+        [{name:'连云港'},{name:'深圳',value:5}],
+        [{name:'深圳'},{name:'泰安',value:5}],
+        [{name:'泰安'},{name:'武汉',value:5}],
+        [{name:'武汉'},{name:'昆明',value:5}],
+        [{name:'昆明'},{name:'南京',value:5}],
+        [{name:'南京'},{name:'武汉',value:5}],
+        [{name:'武汉'},{name:'烟台',value:5}],
+        [{name:'烟台'},{name:'长春',value:5}],
+        [{name:'长春'},{name:'贵阳',value:5}],
+        [{name:'贵阳'},{name:'宿迁',value:5}],
+        [{name:'宿迁'},{name:'徐州',value:5}],
+        [{name:'徐州'},{name:'丽水',value:5}],
+        [{name:'丽水'},{name:'长沙',value:5}],
+        [{name:'长沙'},{name:'沧州',value:5}],
+        [{name:'沧州'},{name:'盐城',value:5}],
+        [{name:'盐城'},{name:'宁波',value:5}],
+        [{name:'宁波'},{name:'宁波',value:5}],
+        [{name:'宁波'},{name:'泰安',value:5}],
+        [{name:'泰安'},{name:'厦门',value:5}],
+        [{name:'厦门'},{name:'保定',value:5}],
+        [{name:'保定'},{name:'宿迁',value:5}],
+        [{name:'宿迁'},{name:'深圳',value:5}],
+        [{name:'深圳'},{name:'贵阳',value:5}],
+        [{name:'贵阳'},{name:'金华',value:5}],
+        [{name:'金华'},{name:'肇庆',value:5}],
+        [{name:'肇庆'},{name:'金华',value:5}],
+        [{name:'金华'},{name:'苏州',value:5}],
+        [{name:'苏州'},{name:'东莞',value:5}],
+        [{name:'东莞'},{name:'惠州',value:5}],
+        [{name:'惠州'},{name:'邯郸',value:5}],
+        [{name:'邯郸'},{name:'玉溪',value:5}],
+        [{name:'玉溪'},{name:'中山',value:5}],
+        [{name:'中山'},{name:'乌鲁木齐',value:5}],
+        [{name:'乌鲁木齐'},{name:'廊坊',value:5}],
+        [{name:'廊坊'},{name:'廊坊',value:5}]
+    ];
+
+
 
     var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
     var convertData = function (data) {
@@ -731,11 +744,11 @@ $(function(){
         return res;
     };
 
-    var color = ['#a6c84c', '#ffa022', '#46bee9'];
-    var series = [];
-    [['北京', BJData], ['上海', SHData], ['广州', GZData]].forEach(function (item, i) {
+    const color = ['#FFEE07', '#43FFB8', '#46bee9', '#c0c0c0'];
+    const series = [];
+    [ ['北京', BJData], ['上海', SHData], ['广州', GZData], ['综合', ZHData], ['全国', QGData] ].forEach(function (item, i) {
         series.push({
-                name: item[0] + ' Top10',
+                name: item[0] + ' 迁徙',
                 type: 'lines',
                 zlevel: 1,
                 effect: {
@@ -755,7 +768,7 @@ $(function(){
                 data: convertData(item[1])
             },
             {
-                name: item[0] + ' Top10',
+                name: item[0] + ' 迁徙',
                 type: 'lines',
                 zlevel: 2,
                 effect: {
@@ -776,7 +789,7 @@ $(function(){
                 data: convertData(item[1])
             },
             {
-                name: item[0] + ' Top10',
+                name: item[0] + ' 迁徙',
                 type: 'effectScatter',
                 coordinateSystem: 'geo',
                 zlevel: 2,
@@ -824,7 +837,7 @@ $(function(){
             orient: 'vertical',
             top: 'bottom',
             left: 'right',
-            data:['北京 Top10', '上海 Top10', '广州 Top10'],
+            data:['北京 迁徙', '上海 迁徙', '广州 迁徙', '综合 迁徙','全国 迁徙'],
             textStyle: {
                 color: '#fff'
             },
