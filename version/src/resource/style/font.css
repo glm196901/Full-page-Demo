@@ -6,9 +6,16 @@ body p {
   text-align: center;
 }
 body #icon,
-body #bar,
-body #word {
+#bar,
+#word,
+#pie,
+#migration{
   min-width: 320px;
   min-height: 568px;
+  margin: 0;
+}
+#migration{
+  min-width: 320px;
+  min-height: 800px;
   margin: 0;
 }
