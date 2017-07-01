@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/version/src/resource/js/data-js/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="839" column="59" lean-forward="false" selection-start-line="839" selection-start-column="59" selection-end-line="839" selection-end-column="59" />
+            <state relative-caret-position="225">
+              <caret line="746" column="71" lean-forward="false" selection-start-line="746" selection-start-column="71" selection-end-line="746" selection-end-column="71" />
               <folding>
                 <element signature="e#2427#7297#0" expanded="false" />
               </folding>
@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/version/src/data.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="493">
               <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
@@ -542,7 +542,7 @@
       <workItem from="1498834476761" duration="4612000" />
       <workItem from="1498840100716" duration="395000" />
       <workItem from="1498840538995" duration="3970000" />
-      <workItem from="1498888913679" duration="14699000" />
+      <workItem from="1498888913679" duration="14924000" />
     </task>
     <task id="LOCAL-00001" summary="what?">
       <created>1498745539836</created>
@@ -698,11 +698,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498919356934</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="perfect map">
+      <created>1498920795388</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1498920795388</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225085000" />
+    <option name="totallyTimeSpent" value="225310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="186" y="40" width="1634" height="942" extended-state="0" />
@@ -759,11 +766,12 @@
     <MESSAGE value="compress some images" />
     <MESSAGE value="add cdn" />
     <MESSAGE value="add Echarts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Echarts" />
+    <MESSAGE value="perfect map" />
+    <option name="LAST_COMMIT_MESSAGE" value="perfect map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1044,21 +1052,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/version/src/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/version/src/resource/js/data-js/data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="839" column="59" lean-forward="false" selection-start-line="839" selection-start-column="59" selection-end-line="839" selection-end-column="59" />
+        <state relative-caret-position="225">
+          <caret line="746" column="71" lean-forward="false" selection-start-line="746" selection-start-column="71" selection-end-line="746" selection-end-column="71" />
           <folding>
             <element signature="e#2427#7297#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/version/src/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

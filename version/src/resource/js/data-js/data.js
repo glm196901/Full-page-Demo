@@ -744,7 +744,7 @@ $(function(){
         return res;
     };
 
-    const color = ['#FFEE07', '#43FFB8', '#46bee9', '#c0c0c0'];
+    const color = ['#FFEE07', '#43FFB8', '#46bee9', '#c0c0c0', '#A7F8FF'];
     const series = [];
     [ ['北京', BJData], ['上海', SHData], ['广州', GZData], ['综合', ZHData], ['全国', QGData] ].forEach(function (item, i) {
         series.push({
