@@ -29,8 +29,14 @@ $(document).ready(function() {
                 $('#turnup').addClass('animated slideInRight');
             }
             if(index === 3){
-                $('.section3').find('p').animate({
+                $('.section3').find('.p1').animate({
                     bottom: '0'
+                }, 500, 'easeOutExpo');
+                $('.section3').find('.p2').animate({
+                    left: '0'
+                }, 500, 'easeOutExpo');
+                $('.section3').find('.p3').animate({
+                    right: '0'
                 }, 500, 'easeOutExpo');
             }
             if(index === 4){
@@ -47,6 +53,7 @@ $(document).ready(function() {
                 $('.section4').find('.services-content-right').delay(500).animate({
                     right: '0'
                 }, 1000, 'easeOutExpo');
+
                 $('.bgdata').hover(()=>{
                         $('.bgdata').addClass('animated rotateIn')}
                     , ()=>{
@@ -83,13 +90,12 @@ $(document).ready(function() {
                         $('.view').removeClass('animated rotateIn')
                     }
                 );
+                // $('.content-header').addClass('animated rollIn');
 
             }
-            if(index === 5){
-                $('.section5').find('p').animate({
-                    left: '0'
-                }, 'easeOutExpo');
+            if(index === 6){
 
+                $('.fadein').addClass('animated zoomInUp')
             }
         },
         onLeave: function(index, direction){
@@ -102,25 +108,48 @@ $(document).ready(function() {
                 $('.section3').find('p').animate({
                     bottom: '-120%'
                 }, 500, 'easeOutExpo');
+                $('.section3').find('p').animate({
+                    left: '-120%'
+                }, 500, 'easeOutExpo');
+                $('.section3').find('p').animate({
+                    left: '-120%'
+                }, 500, 'easeOutExpo');
+
             }
+            // if(index === 4){
+            //     $('.section4').find('.services-content-left').animate({
+            //         left: '-500%'
+            //     }, 500, 'easeOutExpo');
+            //     $('.section4').find('.services-content-midUp').animate({
+            //        top: '-180%'
+            //     }, 500, 'easeOutExpo');
+            //
+            //     $('.section4').find('.services-content-midDown').animate({
+            //         bottom: '-500px'
+            //     }, 500, 'easeOutExpo');
+            //
+            //     $('.section4').find('.services-content-right').animate({
+            //         right: '-500%'
+            //     }, 500, 'easeOutExpo');
             if(index === 4){
                 $('.section4').find('.services-content-left').animate({
                     left: '-180%'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-midUp').animate({
-                    top: '-180%'
+                    top: '-500px'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-midDown').animate({
-                    bottom: '-180%'
+                    bottom: '-500px'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-right').animate({
                     right: '-180%'
                 }, 1000, 'easeOutExpo');
             }
-            if(index === 5){
-                $('.section5').find('p').animate({
-                    left: '-120%'
-                }, 1000, 'easeOutExpo');
+
+            if(index=== 6){
+                $('.fadein').removeClass('animated zoomInUp')
+
+
             }
         }
     });
