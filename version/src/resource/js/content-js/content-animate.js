@@ -40,17 +40,17 @@ $(document).ready(function() {
                 }, 500, 'easeOutExpo');
             }
             if(index === 4){
-                $('.section4').find('.services-content-midUp').delay(500).animate({
+                $('.section4').find('.services-content-midUp').delay(200).animate({
                     top: '0'
                 } , 1000, 'easeOutExpo');
-                $('.section4').find('.services-content-left').delay(500).animate({
+                $('.section4').find('.services-content-left').delay(200).animate({
                     left: '0'
                 } , 1000, 'easeOutExpo');
 
-                $('.section4').find('.services-content-midDown').delay(500).animate({
+                $('.section4').find('.services-content-midDown').delay(200).animate({
                     bottom: '0'
                 } , 1000, 'easeOutExpo');
-                $('.section4').find('.services-content-right').delay(500).animate({
+                $('.section4').find('.services-content-right').delay(200).animate({
                     right: '0'
                 }, 1000, 'easeOutExpo');
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
                         $('.view').removeClass('animated rotateIn')
                     }
                 );
-                // $('.content-header').addClass('animated rollIn');
+                $('.content-header').addClass('animated rollIn');
 
             }
             if(index === 6){
@@ -116,33 +116,19 @@ $(document).ready(function() {
                 }, 500, 'easeOutExpo');
 
             }
-            // if(index === 4){
-            //     $('.section4').find('.services-content-left').animate({
-            //         left: '-500%'
-            //     }, 500, 'easeOutExpo');
-            //     $('.section4').find('.services-content-midUp').animate({
-            //        top: '-180%'
-            //     }, 500, 'easeOutExpo');
-            //
-            //     $('.section4').find('.services-content-midDown').animate({
-            //         bottom: '-500px'
-            //     }, 500, 'easeOutExpo');
-            //
-            //     $('.section4').find('.services-content-right').animate({
-            //         right: '-500%'
-            //     }, 500, 'easeOutExpo');
+
             if(index === 4){
                 $('.section4').find('.services-content-left').animate({
-                    left: '-180%'
+                    left: '-1000%'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-midUp').animate({
-                    top: '-500px'
+                    top: '-10000px'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-midDown').animate({
                     bottom: '-500px'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-right').animate({
-                    right: '-180%'
+                    right: '-1000%'
                 }, 1000, 'easeOutExpo');
             }
 

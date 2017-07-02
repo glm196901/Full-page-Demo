@@ -5,16 +5,10 @@
 .section3 .p2 { position: relative; right: -120%; text-align: center; font: 50px "Microsoft Yahei"; color: #333;}
 .section3 .p3 { position: relative; left: -120%; text-align: center; font: 50px "Microsoft Yahei"; color: #333;}
 
-/*.section4 .services-content-left {position: relative; left: -500%; text-align: center; font: 50px "Microsoft Yahei"; color: #333; cursor: pointer}*/
-/*.section4 .services-content-midUp {position: relative; top: -180%;  text-align: center;font: 50px "Microsoft Yahei"; color: #333; cursor: pointer}*/
-/*.section4 .services-content-midDown {position: relative; bottom: -500px;  font: 50px "Microsoft Yahei"; color: #333; cursor: pointer }*/
-/*.section4 .services-content-right {position: relative; right: -500%; text-align: center; font: 50px "Microsoft Yahei"; color: #333;cursor: pointer }*/
-/*.section5 p  {position: relative; left: -120%; text-align: center; font: 50px "Microsoft Yahei"; color: #000; }*/
-
-.section4 .services-content-left {position: relative; left: -180%; text-align: center; font: 50px "Microsoft Yahei"; color: #000; cursor: pointer}
-.section4 .services-content-midUp {position: relative; top: -500px; text-align: center; font: 50px "Microsoft Yahei"; color: #000; cursor: pointer}
+.section4 .services-content-left {position: relative; left: -1000%; text-align: center; font: 50px "Microsoft Yahei"; color: #000; cursor: pointer}
+.section4 .services-content-midUp {position: relative; top: -1000%; text-align: center; font: 50px "Microsoft Yahei"; color: #000; cursor: pointer}
 .section4 .services-content-midDown {position: relative; bottom: -500px; text-align: center; font: 50px "Microsoft Yahei"; color: #000;cursor: pointer }
-.section4 .services-content-right {position: relative; right: -180%; text-align: center; font: 50px "Microsoft Yahei"; color: #000;cursor: pointer }
+.section4 .services-content-right {position: relative; right: -1000%; text-align: center; font: 50px "Microsoft Yahei"; color: #000;cursor: pointer }
 
 
 
