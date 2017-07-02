@@ -108,10 +108,10 @@ $(document).ready(function() {
                     left: '-180%'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-midUp').animate({
-                    top: '-80%'
+                    top: '-180%'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-midDown').animate({
-                    bottom: '-80%'
+                    bottom: '-180%'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.services-content-right').animate({
                     right: '-180%'
