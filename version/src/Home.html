@@ -30,22 +30,8 @@
     <link rel="stylesheet" href="resource/style/jquery.fullPage.css">
 
 
-
-    <style>
-        .section { text-align: center; font: 50px "Microsoft Yahei"; color: #333;}
-        .section2 p { position: relative; left: -120%; text-align: center; font: 50px "Microsoft Yahei"; color: #000;}
-        .section3 p { position: relative; bottom: -120%; text-align: center; font: 50px "Microsoft Yahei"; color: #000;}
-        .section4 p { display: none; text-align: center; font: 50px "Microsoft Yahei"; color: #333;}
-
-        /*.footer {background: #fff ; min-width: 1024px}*/
-        .footer-link { font-size: 14px ; padding: 30px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
-        .footer-link dl { float: left; width: 19.9%;}
-        .footer-link dt { line-height: 40px; font-weight: 500;}
-        .footer-link dd { line-height: 28px; font-size: 12px}
-        .footer-link a { color: #515151; text-decoration: none;}
-        .footer-link a:hover { color: #31a5e7;}
-        .footer>p { font-size: 12px; text-align: center ;}
-    </style>
+    <!--============================= 内容正文 依赖 =============================-->
+    <link rel="stylesheet" href="resource/style/content.css">
 </head>
 <body>
 <!--============================= 预加载 =============================-->
@@ -150,9 +136,9 @@
         </div>
     <!--============================= 内容正文 =============================-->
     <div class="section section2">
-        <h3>第二屏
-        <p>滚动到第二屏后的回调函数执行的效果</p>
-        </h3>
+        <h3>第二屏</h3>
+        <p class="one" style="float: left">数据是唯一的</p>
+        <p class="img"><img  src="https://www.hitechanswers.net/wp-content/uploads/2012/10/big-data.jpg" alt=""></p>
 		<div class="turn" style="background:red ; height:100px; width:100px ;
 		margin:0 auto ; cursor:pointer"></div>
     </div>
@@ -160,16 +146,58 @@
         <h3>第三屏</h3>
         <p>滚动到第三屏后的回调函数执行的效果</p>
     </div>
-    <div class="section section4" >
-        <h3>第四屏</h3>
-        <p>滚动到第四屏后的回调函数执行的效果</p>
+    <div class="section section4">
+        <div class="container">
+            <div class="section-header">
+                <h1>Our Services</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 services text-center" > <span class="icon icon-strategy"></span>
+                    <div class="services services-content-left" >
+                        <h2  style="color: #333 ;  margin: 30px 0 15px">大数据分析</h2>
+                        <div  ><img src="resource/images/dataAnalysis.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-briefcase"></span>
+                    <div class="services services-content-midUp">
+                        <h2 style="color: #333 ;  margin: 30px 0 15px ">云计算服务</h2>
+                        <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-tools"></span>
+                    <div class="services services-content-right">
+                        <h2 style="color: #333 ;  margin: 30px 0 15px">机器学习训练</h2>
+                        <div><img src="resource/images/Tim_mach.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-genius"></span>
+                    <div class="services services-content-left">
+                        <h2 style="color: #333 ;  margin: 30px 0 15px">神经网络和深度学习</h2>
+                        <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-megaphone"></span>
+                    <div class="services services-content-midDown">
+                        <h2 style="color: #333 ;  margin: 30px 0 15px">数据挖掘及模型</h2>
+                        <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-trophy"></span>
+                    <div class="services services-content-right">
+                        <h2 style="color: #333 ; margin: 30px 0 15px">大数据可视化</h2>
+                        <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section5" >
+        <h3>第5屏</h3>
+        <p>滚动到第5屏后的回调函数执行的效果</p>
         <p id="turnleft" style="height: 150px; width: 150px; background-color:red; margin:  0 ;cursor: pointer ;float: left"></p>
         <p id="turnright" style="height: 150px; width: 150px; background-color:red; margin:  0 auto ;cursor: pointer ;float: right"></p>
         <p id="turnup" style="height: 150px; width: 150px; background-color:red; margin: 0 auto ;cursor: pointer "></p>
-    </div>
-    <div class="section section5">
-        <h3>第5屏</h3>
-        <p>滚动到第四屏后的回调函数执行的效果</p>
     </div>
     <div class="section section6" >
         <p>第6屏</p>
@@ -227,7 +255,7 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
-                sectionsColor: ['', '#1BBC9B', '#fff','#1BBC9B','#1BBC9B','#1BBC9B','#fff'],
+                sectionsColor: ['', '#FFF', '#FFF','#FFF','#FFF','#FFF','#fff'],
                 navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: ['首页', '关于我们', '新闻资讯', '服务内容', '联系我们', '技术支持', '底部'],
@@ -237,9 +265,9 @@
 //                },
                 afterLoad: function(anchorLink, index){
                     if(index === 2){
-                        $('.section2').find('p').delay(500).animate({
+                        $('.section2').find('p').animate({
                             left: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 'easeOutExpo');
 							$('.turn').hover(()=>{
 								$('.turn').addClass('animated bounce')
                                 },
@@ -247,35 +275,68 @@
                                     $('.turn').removeClass('animated bounce')
                                 }
                             );
-
                         $('#turnleft').addClass('animated slideInLeft');
-                        $('#turnup').addClass('animated slideInDown');
-                        $('#turnright').addClass('animated slideInRight');
+                        $('#turnright').addClass('animated slideInDown');
+                        $('#turnup').addClass('animated slideInRight');
                     }
                     if(index === 3){
-                        $('.section3').find('p').delay(500).animate({
+                        $('.section3').find('p').animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 500, 'easeOutExpo');
                     }
                     if(index === 4){
-                        $('.section4').find('p').fadeIn(1000);
+                        $('.section4').find('.services-content-midUp').delay(500).animate({
+                            top: '0'
+                        } , 1000, 'easeOutExpo');
+                        $('.section4').find('.services-content-left').delay(500).animate({
+                            left: '0'
+                        } , 1000, 'easeOutExpo');
+
+                        $('.section4').find('.services-content-midDown').delay(500).animate({
+                            bottom: '0'
+                        } , 1000, 'easeOutExpo');
+                        $('.section4').find('.services-content-right').delay(500).animate({
+                            right: '0'
+                        }, 1000, 'easeOutExpo');
+
+                    }
+                    if(index === 5){
+                        $('.section5').find('p').animate({
+                            left: '0'
+                        }, 'easeOutExpo');
 
                     }
                 },
               onLeave: function(index, direction){
                    if(index === 2){
-                        $('.section2').find('p').delay(500).animate({
+                        $('.section2').find('p').animate({
                            left: '-120%'
                        }, 1000, 'easeOutExpo');
                    }
                    if(index === 3){
-                       $('.section3').find('p').delay(500).animate({
+                       $('.section3').find('p').animate({
                            bottom: '-120%'
-                       }, 1000, 'easeOutExpo');
+                       }, 500, 'easeOutExpo');
                     }
                   if(index === 4){
-                       $('.section4').find('p').fadeOut(2000);
+                      $('.section4').find('.services-content-left').animate({
+                          left: '-180%'
+                      }, 1000, 'easeOutExpo');
+                      $('.section4').find('.services-content-midUp').animate({
+                          top: '80%'
+                      }, 1000, 'easeOutExpo');
+                      $('.section4').find('.services-content-midDown').animate({
+                          bottom: '80%'
+                      }, 1000, 'easeOutExpo');
+                      $('.section4').find('.services-content-right').animate({
+                          right: '-180%'
+                      }, 1000, 'easeOutExpo');
                     }
+                  if(index === 5){
+                      $('.section5').find('p').animate({
+                          left: '-120%'
+                      }, 1000, 'easeOutExpo');
+                  }
                 }
             });
             $(window).resize(function(){
