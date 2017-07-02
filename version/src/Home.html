@@ -154,37 +154,37 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center" > <span class="icon icon-strategy"></span>
-                    <div class="services services-content-left" >
+                    <div class="services-content-left bgdata" >
                         <h2  style="color: #333 ;  margin: 30px 0 15px">大数据分析</h2>
                         <div  ><img src="resource/images/dataAnalysis.jpg" alt=""></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-briefcase"></span>
-                    <div class="services services-content-midUp">
+                    <div class=" services-content-midUp cloud">
                         <h2 style="color: #333 ;  margin: 30px 0 15px ">云计算服务</h2>
                         <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-tools"></span>
-                    <div class="services services-content-right">
+                    <div class=" services-content-right ml">
                         <h2 style="color: #333 ;  margin: 30px 0 15px">机器学习训练</h2>
                         <div><img src="resource/images/Tim_mach.jpg" alt=""></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-genius"></span>
-                    <div class="services services-content-left">
+                    <div class=" services-content-left deep">
                         <h2 style="color: #333 ;  margin: 30px 0 15px">神经网络和深度学习</h2>
                         <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-megaphone"></span>
-                    <div class="services services-content-midDown">
+                    <div class=" services-content-midDown datamining">
                         <h2 style="color: #333 ;  margin: 30px 0 15px">数据挖掘及模型</h2>
                         <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-trophy"></span>
-                    <div class="services services-content-right">
+                    <div class="services-content-right view">
                         <h2 style="color: #333 ; margin: 30px 0 15px">大数据可视化</h2>
                         <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
                     </div>
@@ -251,110 +251,7 @@
 
 
 <!--============================= 内容轮播:全屏轮播、（轮播钮隐藏控制轮播内容一切回调函数） =============================-->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
-                sectionsColor: ['', '#FFF', '#FFF','#FFF','#FFF','#FFF','#fff'],
-                navigation: true,
-                navigationPosition: 'right',
-                navigationTooltips: ['首页', '关于我们', '新闻资讯', '服务内容', '联系我们', '技术支持', '底部'],
-                responsiveWidth: 768,
-                resize: false,
-//                afterResponsive: function(isResponsive){
-//                },
-                afterLoad: function(anchorLink, index){
-                    if(index === 2){
-                        $('.section2').find('p').animate({
-                            left: '0'
-                        }, 'easeOutExpo');
-							$('.turn').hover(()=>{
-								$('.turn').addClass('animated bounce')
-                                },
-                                ()=>{
-                                    $('.turn').removeClass('animated bounce')
-                                }
-                            );
-                        $('#turnleft').addClass('animated slideInLeft');
-                        $('#turnright').addClass('animated slideInDown');
-                        $('#turnup').addClass('animated slideInRight');
-                    }
-                    if(index === 3){
-                        $('.section3').find('p').animate({
-                            bottom: '0'
-                        }, 500, 'easeOutExpo');
-                    }
-                    if(index === 4){
-                        $('.section4').find('.services-content-midUp').delay(500).animate({
-                            top: '0'
-                        } , 1000, 'easeOutExpo');
-                        $('.section4').find('.services-content-left').delay(500).animate({
-                            left: '0'
-                        } , 1000, 'easeOutExpo');
-
-                        $('.section4').find('.services-content-midDown').delay(500).animate({
-                            bottom: '0'
-                        } , 1000, 'easeOutExpo');
-                        $('.section4').find('.services-content-right').delay(500).animate({
-                            right: '0'
-                        }, 1000, 'easeOutExpo');
-
-                    }
-                    if(index === 5){
-                        $('.section5').find('p').animate({
-                            left: '0'
-                        }, 'easeOutExpo');
-
-                    }
-                },
-              onLeave: function(index, direction){
-                   if(index === 2){
-                        $('.section2').find('p').animate({
-                           left: '-120%'
-                       }, 1000, 'easeOutExpo');
-                   }
-                   if(index === 3){
-                       $('.section3').find('p').animate({
-                           bottom: '-120%'
-                       }, 500, 'easeOutExpo');
-                    }
-                  if(index === 4){
-                      $('.section4').find('.services-content-left').animate({
-                          left: '-180%'
-                      }, 1000, 'easeOutExpo');
-                      $('.section4').find('.services-content-midUp').animate({
-                          top: '80%'
-                      }, 1000, 'easeOutExpo');
-                      $('.section4').find('.services-content-midDown').animate({
-                          bottom: '80%'
-                      }, 1000, 'easeOutExpo');
-                      $('.section4').find('.services-content-right').animate({
-                          right: '-180%'
-                      }, 1000, 'easeOutExpo');
-                    }
-                  if(index === 5){
-                      $('.section5').find('p').animate({
-                          left: '-120%'
-                      }, 1000, 'easeOutExpo');
-                  }
-                }
-            });
-            $(window).resize(function(){
-                autoScrolling();
-            });
-
-            function autoScrolling(){
-                var $ww = $(window).width();
-                if($ww < 768){
-                    $.fn.fullpage.setAutoScrolling(false);
-                } else {
-                    $.fn.fullpage.setAutoScrolling(true);
-                }
-            }
-            autoScrolling();
-
-        });
-    </script>
+    <script type="text/javascript" src="resource/js/content-js/content-animate.js"></script>
 
     <!--============================= 加载:导航头=============================-->
     <script src="./resource/js/unified2.js" type="text/javascript" charset="utf-8"></script>
