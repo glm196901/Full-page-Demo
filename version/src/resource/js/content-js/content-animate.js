@@ -21,7 +21,7 @@ $(document).ready(function() {
                         $('.turn').addClass('animated bounce')
                     },
                     ()=>{
-                        $('.turn').removeClass('animated bounce')
+                        $('.turn').removeClass('bounce')
                     }
                 );
                 $('#turnleft').addClass('animated slideInLeft');
@@ -42,19 +42,16 @@ $(document).ready(function() {
             if(index === 4){
                 //左动画
                 $('.services-content-left').addClass('animated fadeInLeft');
-                setTimeout(function(){
-                    $('.services-content-left').removeClass('fadeInLeft');
-                },1000);
                 $('.bgdata').hover(()=>{
                         $('.bgdata').addClass('animated rotateIn')}
                    , ()=>{
-                        $('.bgdata').removeClass('rotateIn')
+                        $('.bgdata').removeClass('animated rotateIn')
                     }
                 );
                 $('.deep').hover(()=>{
                         $('.deep').addClass('animated rotateIn')}
                     , ()=>{
-                        $('.deep').removeClass('rotateIn')
+                        $('.deep').removeClass('animated rotateIn')
                     }
                 );
 
@@ -118,9 +115,22 @@ $(document).ready(function() {
 
             }
             if(index === 4){
-                $('.services-content-midDown').removeClass(' fadeInUp');
-                $('.services-content-right').removeClass(' fadeInRight');
-                $('.services-content-midUp').removeClass('fadeInDown');
+                $('.services-content-left').addClass('fadeOutLeft');
+                setTimeout(function(){
+                    $('.services-content-left').removeClass('fadeOutLeft');
+                },1000);
+                $('.services-content-midDown').addClass(' fadeOutDown');
+                setTimeout(function(){
+                    $('.services-content-midDown').removeClass('fadeOutDown');
+                },1000);
+                $('.services-content-midUp').addClass('fadeOutUp');
+                setTimeout(function(){
+                    $('.services-content-midUp').removeClass(' fadeOutUp');
+                },1000);
+                $('.services-content-right').addClass('animated  fadeOutRight');
+                setTimeout(function(){
+                    $('.services-content-right').removeClass('fadeOutRight');
+                },1000);
             }
 
 

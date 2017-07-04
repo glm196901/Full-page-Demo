@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0bfdc25-1f05-4a9b-aec8-0b929d8ae914" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/version/src/resource/js/content-js/content-animate.js" afterPath="$PROJECT_DIR$/version/src/resource/js/content-js/content-animate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/version/src/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="178" column="85" lean-forward="true" selection-start-line="178" selection-start-column="85" selection-end-line="178" selection-end-column="85" />
+            <state relative-caret-position="1868">
+              <caret line="178" column="85" lean-forward="false" selection-start-line="178" selection-start-column="85" selection-end-line="178" selection-end-column="85" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content-animate.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="content-animate.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/version/src/resource/js/content-js/content-animate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="106" column="13" lean-forward="false" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
+            <state relative-caret-position="1621">
+              <caret line="90" column="65" lean-forward="true" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -68,7 +69,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/genban20161025/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
+            <state relative-caret-position="2204">
               <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
               <folding />
             </state>
@@ -78,7 +79,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/genban20161025/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="10962">
               <caret line="378" column="14" lean-forward="false" selection-start-line="378" selection-start-column="14" selection-end-line="378" selection-end-column="14" />
               <folding />
             </state>
@@ -198,8 +199,8 @@
         <option value="$USER_HOME$/Downloads/201505141704/index.html" />
         <option value="$PROJECT_DIR$/version/src/resource/style/jquery.fullPage.css" />
         <option value="$PROJECT_DIR$/version/src/resource/style/content.css" />
-        <option value="$PROJECT_DIR$/version/src/resource/js/content-js/content-animate.js" />
         <option value="$PROJECT_DIR$/version/src/Home.html" />
+        <option value="$PROJECT_DIR$/version/src/resource/js/content-js/content-animate.js" />
       </list>
     </option>
   </component>
@@ -210,8 +211,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="27" />
-    <option name="y" value="71" />
+    <option name="x" value="256" />
+    <option name="y" value="34" />
     <option name="width" value="1838" />
     <option name="height" value="930" />
   </component>
@@ -567,7 +568,8 @@
       <workItem from="1499014725151" duration="7076000" />
       <workItem from="1499022976187" duration="2338000" />
       <workItem from="1499026752190" duration="4390000" />
-      <workItem from="1499060005884" duration="944000" />
+      <workItem from="1499060005884" duration="1323000" />
+      <workItem from="1499136445304" duration="4063000" />
     </task>
     <task id="LOCAL-00001" summary="what?">
       <created>1498745539836</created>
@@ -835,14 +837,21 @@
       <option name="project" value="LOCAL" />
       <updated>1499072767844</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="improved thoroughly">
+      <created>1499072866623</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1499072866623</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267352000" />
+    <option name="totallyTimeSpent" value="271794000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="27" y="71" width="1838" height="930" extended-state="0" />
+    <frame x="256" y="34" width="1838" height="930" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13979086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1116,7 +1125,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/genban20161025/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="10962">
           <caret line="378" column="14" lean-forward="false" selection-start-line="378" selection-start-column="14" selection-end-line="378" selection-end-column="14" />
           <folding />
         </state>
@@ -1124,7 +1133,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/genban20161025/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
+        <state relative-caret-position="2204">
           <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
           <folding />
         </state>
@@ -1138,18 +1147,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/version/src/resource/js/content-js/content-animate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="106" column="13" lean-forward="false" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/version/src/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="178" column="85" lean-forward="true" selection-start-line="178" selection-start-column="85" selection-end-line="178" selection-end-column="85" />
+        <state relative-caret-position="1868">
+          <caret line="178" column="85" lean-forward="false" selection-start-line="178" selection-start-column="85" selection-end-line="178" selection-end-column="85" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1169,6 +1170,14 @@
             <element signature="n#style#0;n#p#0;n#div#5;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/version/src/resource/js/content-js/content-animate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1621">
+          <caret line="90" column="65" lean-forward="true" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
