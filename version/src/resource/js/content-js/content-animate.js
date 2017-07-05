@@ -4,7 +4,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
-        sectionsColor: ['', '#FFF', '#FFF','#FFF','#FFF','#FFF','#fff'],
+        sectionsColor: ['', '#F3F3F3', '#FDF6E1','#E9E9E9','#c2e5ff','#E9E9E9','#333'],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['首页', '关于我们', '新闻资讯', '服务内容', '联系我们', '技术支持', '底部'],
@@ -91,6 +91,7 @@ $(document).ready(function() {
                 $('.content-header').addClass('animated rollIn');
 
             }
+
             if(index === 6){
 
                 $('.fadein').addClass('animated zoomInUp')
@@ -117,9 +118,9 @@ $(document).ready(function() {
             if(index === 4){
                 $('.services-content-left').addClass('fadeOutLeft');
                 setTimeout(function(){
-                    $('.services-content-left').removeClass('fadeOutLeft');
+                    $('.services-content-left').removeClass('fadeOutLeft')
                 },1000);
-                $('.services-content-midDown').addClass(' fadeOutDown');
+                $('.services-content-midDown').addClass('fadeOutDown');
                 setTimeout(function(){
                     $('.services-content-midDown').removeClass('fadeOutDown');
                 },1000);
@@ -127,10 +128,16 @@ $(document).ready(function() {
                 setTimeout(function(){
                     $('.services-content-midUp').removeClass(' fadeOutUp');
                 },1000);
-                $('.services-content-right').addClass('animated  fadeOutRight');
+                $('.services-content-right').addClass('fadeOutRight');
                 setTimeout(function(){
                     $('.services-content-right').removeClass('fadeOutRight');
                 },1000);
+                $('.content-header').addClass('rollOut');
+                setTimeout(function(){
+                    $('.content-header').removeClass('rollOut');
+                },1000);
+
+
             }
 
 
