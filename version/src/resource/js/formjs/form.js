@@ -5,7 +5,7 @@
                   id_card:{hint:"⚠️请输入18位身份证号码",right:"√身份证号码输入正确",wrong:"×身份证号码输入有误，请重新输入"},
                   password:{hint:"⚠️请输入6位以上密码",right:"√密码格式正确",wrong:"×请输入符合格式的密码"},
                   repassword:{hint:"⚠️请再次输入密码",right:"√再次输入密码正确",wrong:"×两次输入不一致或密码格式不正确，请重新输入或密码格式不正确"}};
-    var regEvent=function(node, event, func){
+    let regEvent=function(node, event, func){
         if (node.addEventListener)
             node.addEventListener(event, func);
         else if (node.attachEvent)
@@ -14,7 +14,7 @@
             node["on" + event] = func;
     };
     function regValue(id,i){
-        var match=false,
+        let match=false,
         input=document.getElementById(id),
         value=input.value;
         switch (id){
@@ -68,11 +68,11 @@
             index=1;
         }
     };
-    var inputs=document.getElementsByClassName("input"),
+    let inputs=document.getElementsByClassName("input"),
     id,
     hint=document.getElementsByClassName("hint"),
     index=0;
-    for(var j=0;j<inputs.length;j++){
+    for(let j=0;j<inputs.length;j++){
         (function(i){
             regEvent(inputs[i],"focus",function(){
                 hint[i].style.visibility="visible";
@@ -85,7 +85,7 @@
     }
     regEvent(document.getElementById("submit"),"click",function(e){
         if(index!==0){
-            alert(index)
+            alert(index);
             e.preventDefault();
             alert("您的输入有误，请检查并重新输入！");
             return false;
