@@ -115,6 +115,19 @@
             cursor: pointer;
         }
     </style>
+    <!--网易新闻api-->
+    <style>
+        .style{
+            border: 1px solid #333; height: 50px; width: 50px;
+            text-align: center;
+            float: left;
+            padding: 6px;
+            margin-top: 100px;
+            margin-left: 20px;
+            list-style: none;
+
+        }
+    </style>
 </head>
 <body>
 <!--============================= 预加载 =============================-->
@@ -226,10 +239,19 @@
 		margin:0 auto ; cursor:pointer"></div>
     </div>
     <div class="section section3" >
-        <h3>第三屏</h3>
-        <p class="p1">滚动到第三屏后</p>
-        <p class="p2">滚动到第三屏后</p>
-        <p class="p3">滚动到第三屏后</p>
+        <h1>新闻资讯</h1>
+        <div class="content">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </div>
     <div class="section section4" data-background="re">
         <div class="container">
@@ -378,8 +400,81 @@
     <script src="resource/js/content-js/scrolloverflow.min.js"></script>
     <script src="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
 
+<!--============================= 调用了网易新闻api 第三屏=============================-->
+    <script >
+    let oCon = document.querySelector('.content'); //获取元素
+    let allLi = document.querySelectorAll('.style');
+    let page = 1;//页码初始化
+    pageList();
+    function pageList() {
+        //用var无法阻断for循环 采用let 块级作用
+        let len = allLi.length;
+        for (let i =0; i<len; i++){
+            allLi[i].onclick = function () {
+                // alert(i+1);
+                page = i;
+                getJson();
+
+            }
+        }
+// 匿名体立即执行
+        /*  for(var i=0, len = allLi.length ;i<len;i++){
+         (function (i) {
+         allLi[i].onclick = function () {
+         alert(i+1)
+         }
+         })(i)
+         }*/
+
+    }
+
+    getJson();
+    function showPage (dataList) {//页面渲染
+        let str = '';//初始化标签文本域
+        let len = dataList.length;//数组长度
+        for(let i=0  ;i<len ;i++){
+            str+=`<a  style="text-decoration:none" href="${dataList[i].docurl}" >
+    <img style="float: left ;height: 30px; width: 30px;"  src="${dataList[i].imgurl}" alt="">
+    <p >${dataList[i].title}
+    <span style="margin-left: 50px ; ">  >  </span></p>
+    </a>`
+        }
+        oCon.innerHTML =str; //渲染列表到content中
+        //console.log(str)
+    }
+    function getJson () { //数据拉取模块
+        const params = [];
+        const xmlHttp = new XMLHttpRequest();//创建对象
+        const  url = 'http://wangyi.butterfly.mopaasapp.com/news/api';
+        const  sendData = {
+            type: 'tech',
+            page: '1',
+            limit: '15',
+
+        };
+        for(let key in sendData){//讲json键值对添加到数组
+            params.push(key + '=' + sendData[key]);
+        }
+        const postData = params.join('&'); //数组每一个元素以&拼接字符串
+        console.log(postData);
+        xmlHttp.open('GET',url + '?'+ postData,true);
+        xmlHttp.send(null);
+        xmlHttp.onreadystatechange = function () {
+            if(xmlHttp.readyState===4&&xmlHttp.status===200){
+                let result = JSON.parse(xmlHttp.response);
+                let dataList = result.list;//数组
+                showPage(dataList);
+                console.timeEnd('数据拉取');
+                console.log(dataList)
+            }
+        };
+    }
+</script>
+
+
     <!--============================= 调用百度翻译api接口 =============================-->
     <script src="resource/js/content-js/md5.js"></script>
+
     <script >
     //    var arr =['中文','英文'];
     //    var shadow = ['zh','en'];
