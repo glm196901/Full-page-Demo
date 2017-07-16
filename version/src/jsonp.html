@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <style>
+     *{
+         margin: 0 ;
+         padding: 0 ;
+         list-style: none;
+     }
+    .wrap{
+        margin:100px auto;
+        width: 900px;
+        height: 450px;
+        box-shadow: 0 0 4px #ccc;
+        background: #fff;
+        cursor: pointer;
+    }
+    .wrap .language{
+        position: relative;
+        width: 100px;
+        padding: 0 30px;
+        margin: 20px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border: 1px solid #434343;
+    }
+    .wrap .language .languages{
+        position: absolute;
+        top: 30px;
+        left: -1px;
+        width: 354px;
+        height:auto;
+        border: 1px solid #434343;
+        display: none;
+    }
+     .wrap .language .languages ul li{
+         margin: 4px;
+         float: left;
+         width: 78px;
+         height: 40px;
+         border: 1px dashed #ccc;
+         background: #82d3fc;
+         color: #fff;
+     }
+     .wrap .input , .wrap .show{
+         width: 400px;
+         height: 200px;
+         float: left;
+         background: #fff;
+         color: #000;
+         margin-top: 135px;
+         margin-left: 25px;
+         box-shadow: 0 0 4px #222;
+     }
+     .wrap .input textarea{
+         z-index: 3;
+         height: 200px;
+         width: 400px;
+         border: 0;
+         resize: none;
+         /*点击无变化*/
+         outline: 0;
+         color: #333;
+         font-family: '微软雅黑';
+         margin: 0;
+         padding: 0;
+         line-height: 40px;
+         font-size: 20px;
+         text-indent: 10px;
+     }
+     .wrap span.btn{
+         width: 100px;
+         height: 30px;
+         float: right;
+         line-height: 30px;
+         text-align: center;
+         margin: 10px;
+         background: #82d3fc;
+         box-shadow: 0 0 4px #ccc ;
+         border-radius: 5px;
+         color: #ffffff;
+         cursor: pointer;
+     }
+</style>
+</head>
+<body>
+<h1>Hello, world!</h1>
+<div class="wrap">
+    <div class="language">
+        <span>自动检测</span>
+        <div class="languages">
+            <ul>
+                <li data-ln="zh">中文</li>
+                <li data-ln="en">英语</li>
+                <li data-ln="yue">粤语</li>
+                <li data-ln="jp">日语</li>
+                <li data-ln="kor">韩语</li>
+                <li data-ln="fra">法语</li>
+                <li data-ln="spa">西班牙语</li>
+                <li data-ln="ru">俄语</li>
+                <li data-ln="pl">波兰语</li>
+                <li data-ln="fln">芬兰语</li>
+            </ul>
+        </div>
+    </div>
+    <div class="input">
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+    </div>
+    <div class="row-fluid show"></div>
+    <span class="span6 translate btn">点击翻译</span>
+    <span class="span6 empty btn">清空</span>
+</div>
+<script src="resource/js/content-js/md5.js"></script>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="https://cdn.bootcss.com/popper.js/1.9.3/umd/popper.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script >
+//    var arr =['中文','英文'];
+//    var shadow = ['zh','en'];
+	var show = document.querySelector('.show');
+    //立即执行函数体 不污染script全局作用域    当有循环体中是闭包
+  (function () {
+
+    var text = document.querySelector('#text'); //最新原生js选择器
+
+    var translate = document.querySelector('.translate');
+    var empty = document.querySelector('.empty');
+    //声明变量保存输入文本
+    var lan = 'zh'; //翻译语言
+    var str; //输入文本
+    var timer= null;  //用户停止输入时自动翻译
+    translate.onclick = trans;
+    //每次按下键盘是清除定时器,感觉像是数据双向绑定
+    text.onkeydown = function () {
+    	clearTimeout(timer);
+        timer = setTimeout(()=>{
+        	trans();
+        },500)
+		};
+        function trans(lanx) { //长度大于零
+            if( text.value && text.value.length>0 ) {
+        	    //正则匹配非法字符
+                const reg = /[^a-zA-Z0-9\_\s*\u4e00-\u9fa5]/g;
+                let strText = text.value;
+                //非法字符的过滤
+                if(reg.test(strText) === true){
+                 str = strText.replace(reg,'');
+                 console.log(str)
+                }else{
+             	    str = text.value
+                 }
+                const to = lanx?lanx:lan; //语言参数查询
+                const appid = '20170711000064027'; //账号
+                const key = 'jaDDzbPjbDJ0FFqfWhfn'; //密码
+                let query = str;  //需要翻译的字符
+                let salt = Date.now(); //当前时间表示salt
+                let str1 = appid+query+salt+key;
+                let sign = MD5(str1);
+                let from = 'auto';
+                //let to = 'en';
+                jsonP({
+                  url:'https://fanyi-api.baidu.com/api/trans/vip/translate',
+                  method:'GET',
+                  dataType:'JSONP',
+                  data:
+                    {
+                        q:query,
+                        appid:appid,
+                        salt:salt,
+                        from:from,
+                        to:to,
+                        sign:sign
+                    }
+                })
+
+            }
+
+        }
+
+		function jsonP(opt) {
+            opt = opt||{};
+            opt.method  = opt.method||'POST';
+            opt.url = opt.url||'';
+            opt.data = opt.data||null;
+            opt.dataType = opt.dataType||'JSONP';
+		    const params = [];
+		    for (var key in opt.data){
+		    	params.push(key + '=' + opt.data[key]);
+		    }
+            var postData = params.join('&');
+//            ['name=张三','age=18'].join('&')
+//            'name=张三&age=18'
+            if(opt.dataType === 'JSONP') {
+              creatScript(opt.url, postData)
+            }
+
+        }
+        function creatScript(url,data) {
+            var oScript = document.createElement('script');
+            oScript.src = url+ '?'+ data + '&callback=getR';
+            //向body最后插入一个标签
+            document.body.appendChild(oScript)
+				}
+	choose();
+	function choose() { // 选择语言
+		let $lan = $('.language');
+		let $lans = $('.languages ul li');
+		$lan.click(()=>{
+			$('.languages').slideToggle(600);
+		});
+		$lans.click(function () { //这里不能用箭头函数
+			lan = $(this).data('ln'); //指向  当前对象
+			console.log(lan);
+            //$lan.children()
+           //jquery 对象和 js对象转换  自动检测替换为当前点击的
+            $lan[0].children[0].innerHTML = $(this).text();
+            trans(lan);
+		})
+	}
+	})();
+
+
+
+
+
+	//    $(document).ready(()=>{
+	//    	$('span').click(()=>{
+	//    		$('.languages').slideToggle()
+	//        })
+	//    })
+		function getR (res) {
+			console.log(res);
+          show.innerHTML = res.trans_result[0].dst
+		}
+</script>
+<!--<script src="http://api.fanyi.baidu.com/api/trans/vip/translate?q=apple&from=en&to=zh&appid=2015063000000001&salt=1435660288&sign=f89f9594663708c1605f3d736d01d2d4&callback=getR"></script>-->
+</body>
+</html>

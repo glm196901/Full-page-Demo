@@ -53,7 +53,7 @@ const option1 = {
         name: '技能条',
         type: 'bar',
         data: [30, 20, 10, 10, 10, 20],
-        color:['#00cc99','#fffff']
+        color:['#0ee2c0','#fffff']
     }]
 };
 myChart.setOption(option1);

@@ -241,16 +241,7 @@
     <div class="section section3" >
         <h1>新闻资讯</h1>
         <div class="content">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+
         </div>
     </div>
     <div class="section section4" data-background="re">
@@ -270,7 +261,7 @@
                 <div class="col-md-4 col-sm-6 services ">
                     <div class=" services-content-midUp cloud">
                         <h2 style="color: #333 ;  margin: 30px 0 15px ">云计算服务</h2>
-                        <div><img src="http://lukelonergansf.com/wp-content/uploads/2016/10/02_cloud_computing.png" alt=""></div>
+                        <div><img src="resource/images/cloud_computing.jpg" alt=""></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services ">
@@ -328,6 +319,7 @@
         </div>
     </div>
     <div class="section section6" >
+
         <p class="fadein" style="height: 200px ;width:  200px ;background: red ;margin: 0 auto">第6屏</p>
     </div>
     <div class="section footer fp-auto-height">
@@ -400,75 +392,70 @@
     <script src="resource/js/content-js/scrolloverflow.min.js"></script>
     <script src="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
 
-<!--============================= 调用了网易新闻api 第三屏=============================-->
+<!--============================= 调用了新闻api 第三屏=============================-->
     <script >
-    let oCon = document.querySelector('.content'); //获取元素
-    let allLi = document.querySelectorAll('.style');
-    let page = 1;//页码初始化
-    pageList();
-    function pageList() {
-        //用var无法阻断for循环 采用let 块级作用
-        let len = allLi.length;
-        for (let i =0; i<len; i++){
-            allLi[i].onclick = function () {
-                // alert(i+1);
-                page = i;
-                getJson();
+        let oCon = document.querySelector('.content');
+        getData();
 
+        function showNews(dataList){
+            let str = '';
+            let len = dataList.length;
+            for(var i = 0 ; i<len;i++){
+                str+=`
+                <div class="col-md-2 col-sm-4 services " >
+                    <div class="services" >
+                       <h2  style="color: #333 ;  margin: 30px 0 15px"></h2>
+                        <div ><img src="${dataList[i].top_image}" alt=""></div>
+                        <p >${dataList[i].title} </p>
+                        <p style="margin:0">${getLocalTime(dataList[i].edit_time)}</p>
+
+                    </div>
+                </div>
+`}
+            oCon.innerHTML = str ;
+            console.log(str)
+        }
+
+
+
+        function getData() {
+            const News = [];
+            const url  = 'http://api.dagoogle.cn/news/get-news';
+            const sendData = {
+                tableNum: 8,
+                pagesize: 18,
+                callback: '?',
+
+
+            };
+            for(let key in sendData){
+                News.push(key + '=' + sendData[key])
             }
-        }
-// 匿名体立即执行
-        /*  for(var i=0, len = allLi.length ;i<len;i++){
-         (function (i) {
-         allLi[i].onclick = function () {
-         alert(i+1)
-         }
-         })(i)
-         }*/
+            const postData = News.join('&');
+            console.log(postData);
+            $.ajax({
+                type: "GET",
+                url:url+ '?'+ postData,
+                dataType: "jsonp",
+                success: function(res) {
+                    var dataList = res.data;
+                    var len = dataList.length;
+                    console.log(dataList[0].edit_time);
+                    showNews(dataList);
+//					for(let i = 0; i<len; i++) {
+//                      console.log(getLocalTime(dataList[i].edit_time));
+//                    }
+                },
+                error: function(){
+                    alert('fail');
+                }
+            });
 
-    }
-
-    getJson();
-    function showPage (dataList) {//页面渲染
-        let str = '';//初始化标签文本域
-        let len = dataList.length;//数组长度
-        for(let i=0  ;i<len ;i++){
-            str+=`<a  style="text-decoration:none" href="${dataList[i].docurl}" >
-    <img style="float: left ;height: 30px; width: 30px;"  src="${dataList[i].imgurl}" alt="">
-    <p >${dataList[i].title}
-    <span style="margin-left: 50px ; ">  >  </span></p>
-    </a>`
         }
-        oCon.innerHTML =str; //渲染列表到content中
-        //console.log(str)
-    }
-    function getJson () { //数据拉取模块
-        const params = [];
-        const xmlHttp = new XMLHttpRequest();//创建对象
-        const  url = 'http://wangyi.butterfly.mopaasapp.com/news/api';
-        const  sendData = {
-            type: 'tech',
-            page: '1',
-            limit: '15',
-
-        };
-        for(let key in sendData){//讲json键值对添加到数组
-            params.push(key + '=' + sendData[key]);
+        //时间戳转化函数
+        function getLocalTime(nS) {
+            return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
         }
-        const postData = params.join('&'); //数组每一个元素以&拼接字符串
-        console.log(postData);
-        xmlHttp.open('GET',url + '?'+ postData,true);
-        xmlHttp.send(null);
-        xmlHttp.onreadystatechange = function () {
-            if(xmlHttp.readyState===4&&xmlHttp.status===200){
-                let result = JSON.parse(xmlHttp.response);
-                let dataList = result.list;//数组
-                showPage(dataList);
-                console.timeEnd('数据拉取');
-                console.log(dataList)
-            }
-        };
-    }
 </script>
 
 
@@ -594,5 +581,9 @@
         show.innerHTML = res.trans_result[0].dst
     }
 </script>
+
+
+
+
 </body>
 </html>
