@@ -407,8 +407,8 @@
                        <h2  style="color: #333 ;  margin: 30px 0 15px"></h2>
                         <div ><img src="${dataList[i].top_image}" alt=""></div>
                         <p >${dataList[i].title} </p>
-                        <p style="margin:0">${getLocalTime(dataList[i].edit_time)}</p>
-
+                        <p style="float: left">${getLocalTime(dataList[i].edit_time)}</p>
+                        <p style="float: right">${dataList[i].source}</p>
                     </div>
                 </div>
 `}
@@ -440,7 +440,7 @@
                 success: function(res) {
                     var dataList = res.data;
                     var len = dataList.length;
-                    console.log(dataList[0].edit_time);
+                    console.log(dataList);
                     showNews(dataList);
 //					for(let i = 0; i<len; i++) {
 //                      console.log(getLocalTime(dataList[i].edit_time));
