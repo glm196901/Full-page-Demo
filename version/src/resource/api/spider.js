@@ -48,7 +48,7 @@ http.createServer((req,res)=>{
 
 //家在第三方页面
 function download(url,callback) {
-    http.get('http://myurl?link=http://www.jj59.com/jingpinwenzhang/list_68_3.html&callback=cb',(res)=>{
+    http.get('https://www.apiopen.top/journalismApi',(res)=>{
         "use strict";
         let bufferHelper = new BufferHelper(); //解决中文编码问题
         res.on('data',(chunk)=>{
